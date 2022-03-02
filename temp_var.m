@@ -10,8 +10,7 @@ readAPIKey = 'K1BT6Y77BEFGSQSB';
 // minutes. Learn more about the THINGSPEAKREAD function by going to 
 // the Documentation tab on the right side pane of this page. 
    
-tempF = thingSpeakRead(readChannelID,'Fields',TemperatureFieldID,...
-'NumMinutes',24*60, 'ReadKey',readAPIKey); 
+tempF = thingSpeakRead(readChannelID,'Fields',TemperatureFieldID,'NumMinutes',24*60, 'ReadKey',readAPIKey); 
    
 histogram(tempF); 
 xlabel('Temperature (F)'); 
